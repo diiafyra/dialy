@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">di.aly</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">DI.ALY</string>
+    <string name="nav_header_subtitle">#mot_san_pham_vo_van_cua_diase</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="wallet">wallet</string>
+    <string name="money">MONEY</string>
+    <string name="overview_money">overview money</string>
+    <string name="you_re_stupid">YOU\'RE STUPID</string>
+    <string name="budget">budget</string>
+    <string name="time">TIME</string>
+    <string name="elseitem">ELSE</string>
+    <string name="dev">dev</string>
+    <string name="todolist">todolist</string>
+    <string name="overview_time">overview time</string>
+</resources>

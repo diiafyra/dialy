@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/wallet"
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#BFD9D6"
+    android:padding="12dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/round"
+            android:backgroundTint="#F2F2F2"
+            android:layout_marginBottom="16dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DS VÍ"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="7dp"/>
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="489dp"
+                android:layout_below="@+id/listBudget"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        app:srcCompat="@drawable/baseline_add_24"
+        app:tint = "#ffffff"
+        app:backgroundTint="#365359"
+        android:layout_gravity="bottom|end"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

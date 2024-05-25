@@ -1,0 +1,61 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_warning"
+            android:icon="@drawable/do_not_disturb_on_24"
+            android:title="@string/you_re_stupid" />
+
+        <item
+            android:id="@+id/nav_money"
+            android:title="@string/money">
+            <menu>
+
+                <item
+                    android:id="@+id/nav_overview_money"
+                    android:icon="@drawable/baseline_attach_money_24"
+                    android:title="@string/overview_money" />
+
+                <item
+                    android:id="@+id/nav_budget"
+                    android:icon="@drawable/baseline_local_mall_24"
+                    android:title="@string/budget" />
+                <item
+                    android:id="@+id/nav_wallet"
+                    android:icon="@drawable/account_balance_wallet_24"
+                    android:title="@string/wallet"/>
+
+            </menu>
+        </item>
+
+        <item
+            android:id="@+id/nav_time"
+            android:title="@string/time">
+            <menu>
+                <item
+                    android:id="@+id/nav_overview_time"
+                    android:icon="@drawable/time_filled_24"
+                    android:title="@string/overview_time"/>
+
+                <item
+                    android:id="@+id/nav_todolist"
+                    android:icon="@drawable/assignment_24"
+                    android:title="@string/todolist"/>
+            </menu>
+        </item>
+
+        <item
+            android:id="@+id/nav_grow"
+            android:title="@string/elseitem">
+            <menu>
+                <item
+                    android:id="@+id/nav_dev"
+                    android:icon="@drawable/baseline_circle_24"
+                    android:title="@string/dev"/>
+            </menu>
+        </item>
+    </group>
+
+</menu>

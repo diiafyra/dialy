@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/o_money"
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:orientation="horizontal"
+            android:background="@drawable/round"
+            android:backgroundTint="#365359"
+            android:layout_marginBottom="16dp">
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="TODAY"
+                    android:textColor="@color/white"
+                    app:buttonTint="@color/white" />
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="THIS MONTH"
+                    android:textColor="@color/white"
+                    app:buttonTint="@color/white" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/round"
+            android:backgroundTint="#71B1D9"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Max khả dụng:"
+                android:textSize="20dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="XXX"
+                android:textSize="40dp"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="319sp"
+            android:layout_marginBottom="16sp"
+            android:background="@drawable/round"
+            android:backgroundTint="#F2C4DE"
+            android:paddingLeft="7sp">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/textView3"
+                android:layout_marginLeft="10sp"
+                android:textSize="20sp"
+                android:text="xxx" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Giao dịch:"
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
+
+            <HorizontalScrollView
+                android:id="@+id/chips"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/textView3">
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/chip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp">
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="shopi" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="di" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="eat" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="life" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="..." />
+
+                </com.google.android.material.chip.ChipGroup>
+            </HorizontalScrollView>
+
+            <ListView
+                android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/chips" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>

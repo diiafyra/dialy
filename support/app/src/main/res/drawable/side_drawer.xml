@@ -1,0 +1,11 @@
+<!-- res/drawable/wave_rect.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <padding android:left="10dp"/>
+    <size android:width="120dp"
+        android:height="60dp"/>
+    <gradient
+        android:startColor="#527391"
+        android:endColor="#6A94CD"
+        android:type="linear"
+        android:angle="0"/>
+</shape>
